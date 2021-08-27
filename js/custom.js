@@ -206,6 +206,7 @@ const numberCheck = (() => {
     }
 })
 const nameCheck = (() => {
+   $('#name').val($('#name').val().replace(/[^a-zA-Z\s]/gi, ''));
     let name = $("#name").val();
     name = name.replace(/  +/g, ' ');
     var reg_exp = /^[A-Za-z0-9 ]+$/;
